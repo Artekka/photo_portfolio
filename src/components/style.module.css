@@ -1,0 +1,27 @@
+.heading {
+    color: purple;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.container {
+    margin: auto;
+    max-width: 500px;
+}
+
+.navLink {
+    list-style: none;
+    display: flex;
+}
+
+.navLinkItem {
+    padding-right: 1rem;
+}
+
+.navLinkText {
+    color: gray;
+}
+
+.footing {
+    font-weight: bold;
+}

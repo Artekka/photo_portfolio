@@ -2,17 +2,12 @@ import * as React from "react"
 import {Link} from "gatsby"
 import Layout from "../components/layout"
 
-// Define components
-
 const IndexPage = () => {
 	return (
-		<Layout pageTitle="Home">
-			
+		<Layout pageTitle="About">
+			<p>Blah blah blah welcome to the About page or whatever</p>
 		</Layout>
 	)
 }
-
-
-// Spit this ish out
 
 export default IndexPage
