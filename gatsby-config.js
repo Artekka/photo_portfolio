@@ -1,12 +1,14 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "localhost:3000",
-    title: "Portfolio",
+    title: "Photo Portfolio - React, Node, Gatsby - RNG",
   },
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -32,5 +34,16 @@ module.exports = {
       },
       __key: "pages",
     },
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        cssLoaderOptions: {
+          esModule: false,
+          modules: {
+            exportLocalsConvention: 'camelCaseOnly'
+          }
+        }
+      }
+  },
   ],
 };

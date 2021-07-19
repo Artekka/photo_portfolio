@@ -6,12 +6,21 @@
 
 .container {
     margin: auto;
-    max-width: 500px;
+    max-width: 800px;
+    font-family:sans-serif
 }
 
+
+.site-title {
+    font-size: 2rem;
+    color: gray;
+    font-weight: 700;
+  }
+
 .navLink {
-    list-style: none;
     display: flex;
+    list-style: none;
+    padding-left: 0;
 }
 
 .navLinkItem {
@@ -25,3 +34,17 @@
 .footing {
     font-weight: bold;
 }
+
+
+.img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.gridImage {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
